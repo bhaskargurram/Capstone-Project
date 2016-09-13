@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="8">
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/task_check"
+        android:layout_weight="1" />
+
+    <com.bhaskar.snapreminder.model.TextViewCustom
+        android:id="@+id/task_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:contentDescription="@string/task_detail"
+        app:customFont="@string/typeface_regular" />
+
+    <ImageView
+        android:id="@+id/image_cancel_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:contentDescription="@string/cancel_task"
+        android:src="@drawable/ic_clear_black_24dp" />
+</LinearLayout>

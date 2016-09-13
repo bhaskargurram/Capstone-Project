@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhaskar.snapreminder.view.ReminderDetailActivity"
+    tools:showIn="@layout/activity_reminder_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/down"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:elevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cards_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.bhaskar.snapreminder.model.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/date_label"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        app:customFont="@string/typeface_bold" />
+
+                    <com.bhaskar.snapreminder.model.TextViewCustom
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/dd_mm_yyyy"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:contentDescription="@string/cd_reminder_date"
+                        android:transitionName="date_transition"
+                        app:customFont="@string/typeface_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.bhaskar.snapreminder.model.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/time_label"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        app:customFont="@string/typeface_bold" />
+
+                    <com.bhaskar.snapreminder.model.TextViewCustom
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/time_default"
+                        android:contentDescription="@string/cd_reminder_time"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        app:customFont="@string/typeface_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.bhaskar.snapreminder.model.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/repeat_label"
+                        android:textSize="30sp"
+                        app:customFont="@string/typeface_bold" />
+
+                    <com.bhaskar.snapreminder.model.TextViewCustom
+                        android:id="@+id/freq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/repeat_default"
+                        android:textSize="24sp"
+                        app:customFont="@string/typeface_regular" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <CheckBox
+                        android:id="@+id/repeat_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/do_you_want_to_repeat"
+                        android:text="@string/repeat_checkbox_label" />
+
+                    <CheckBox
+                        android:id="@+id/task_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cd_Add_tasks"
+                        android:text="@string/tasks_checkbox_label" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+
+            android:elevation="8dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cards_bg"
+                android:orientation="vertical">
+
+                <com.bhaskar.snapreminder.model.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/desciption_label"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    app:customFont="@string/typeface_bold" />
+
+                <com.bhaskar.snapreminder.model.TextViewCustom
+                    android:id="@+id/description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/description"
+                    android:contentDescription="@string/reminder_description"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:transitionName="desc_transition"
+                    app:customFont="@string/typeface_regular" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/linear_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/cards_bg"
+            android:elevation="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cards_bg"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_tasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.bhaskar.snapreminder.model.TextViewCustom
+                    android:id="@+id/add_list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:contentDescription="@string/add_task_item"
+                    android:text="@string/add_task_label"
+                    app:customFont="@string/typeface_regular" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

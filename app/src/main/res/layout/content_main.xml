@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/snack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhaskar.snapreminder.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.bhaskar.snapreminder.model.TextViewCustom
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_empty_text"
+        android:gravity="center"
+        android:text="No Reminders Set"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+
+        app:customFont="@string/typeface_regular" />
+
+
+</LinearLayout>
