@@ -10,8 +10,8 @@ Customize your reminders add details, set a timer, add an image, load image from
 Any general android user, who wants to set reminders.
 
 <b>Features</b>
-<br/>● Can set Reminders with images
-<br/>● Can add a task list in a reminder.
+<br/>● Set Reminders with images
+<br/>● Add a list of tasks for a reminder.
 <br/>● Displays flash cards of saved reminders
 <br/>● Frequency can be adjusted
 <br/>● Uses Facebook's Graph API to get friends birthday reminders
@@ -24,8 +24,8 @@ A Content Provider is created for accessing the database of saved cards.
 
 <b>Describe any corner cases in the UX.</b><br/>
 On Starting the application, if there are no saved cards, then a text needs to be displayed on the home screen that “Currently no saved Cards”. 
-If the user presses back button while taking an image, it should return to home screen i.e the screen containing the flash cards
-If the user does not wants to set a reminder with an image then a default image needs to be put.
+<br/>If the user presses back button while taking an image, it should return to home screen i.e the screen containing the flash cards
+<br/>If the user does not wants to set a reminder with an image then a default image needs to be put.
 
 <b>Describe any libraries you’ll be using and share your reasoning for including them.</b><br/>
 https://github.com/wdullaer/MaterialDateTimePicker: A date picker Library to set the date and time to remind the user.
