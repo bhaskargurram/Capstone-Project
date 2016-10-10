@@ -17,6 +17,6 @@ Any general android user, who wants to set reminders.
 <br/>● Uses Facebook's Graph API to get friends birthday reminders
 <br/>
 
-Libraries use:
+Libraries used:<br/>
 A date picker Library: https://github.com/wdullaer/MaterialDateTimePicker: <br/>
 Picasso to load image http://square.github.io/picasso/.
