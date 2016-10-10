@@ -17,9 +17,6 @@ Any general android user, who wants to set reminders.
 <br/>● Uses Facebook's Graph API to get friends birthday reminders
 <br/>
 
-<b>Key Considerations</b>
-<br>
-<b>How will your app handle data persistence?</b><br/>
-A Content Provider is created for accessing the database of saved cards.
-
-https://github.com/wdullaer/MaterialDateTimePicker: A date picker Library to set the date and time to remind the user.
+Libraries use:
+A date picker Library: https://github.com/wdullaer/MaterialDateTimePicker: <br/>
+Picasso to load image http://square.github.io/picasso/.
